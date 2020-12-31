@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+var ractangle = function(width,height){
+this.width = width
+this.height = height
+this.draw = function(){
+console.log("I am ractangle")
+
+console.log(this)
+}
+
+this.printProperties = function (){
+console.log('my width is'+this.width)
+console.log('my height is'+this.height)
+}
+
+}
+
+var result = ractangle(10,20);
+
+result.draw()
+
+
+    </script>
+</body>
+</html>

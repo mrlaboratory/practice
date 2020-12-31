@@ -1,0 +1,449 @@
+*{
+  box-sizing: border-box;
+}
+
+.body1{
+color:black;
+background-color:powderblue;
+}
+
+.body2{
+color:black;
+background-color:white;
+border-radius:20px;
+border:5px solid white;
+}
+
+
+
+
+.header-img img {
+	width:100%;
+	height:100px;
+	border-radius:10px;
+	opacity:0.5;
+	display:block;
+	
+}
+
+.header-menu-mr {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: powderblue;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height:60px;
+
+}
+
+
+
+.header-menu-mr {
+color:white;
+font-weight:bold;
+width:100%;
+height:auto;
+}
+
+.header-menu-mr a {
+	color:white;
+}
+
+.header-menu-mr li {
+	float:left;
+}
+
+.header-menu-mr li a{
+    padding:10px;
+	margin:10px;
+	box-shadow: 0 0  10px black;
+	list-style-type:none;
+	background-color:gray;
+	display:block;
+	text-decoration:none;
+	border-radius:15px;
+	border:1px solid #696373;
+	transform:rotate(5deg);
+	transition: box-shadow 2s, transform 1s;
+	
+}
+
+
+
+.header-menu-mr li a:hover{
+    background-color:gray;
+	display:block;
+	box-shadow:none;
+	transform: rotateY(360deg);
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s-video {
+	background-color:#6a8b91;
+	width:100%;
+    border:5px solid black;
+    border-radius:15px;
+	display: inline-block;
+	padding-bottom:50px;
+	
+
+	
+}
+
+
+.videomr {
+	border:5px solid black;
+	border-radius:15px;
+	margin:5px;
+	text-align:center;
+	display:inline-block;
+	 transition: border-width 1s linear;
+}
+
+@media (max-width:600px) {
+	.videomr {
+	width:98%;	
+	height:300px;
+		
+	}
+}
+
+
+.images-gallery{
+	width:auto;
+	overflow:auto;
+}
+.img-gallery {
+    border-radius:5px;
+    border:2px solid gray;
+    width: 100%;
+    height: auto;
+    display:block;
+    margin: 1px;
+    border: 2px solid green;
+    text-align:center;
+	box-shadow:0 0 10px black;
+    cursor:pointer;
+	transition: box-shadow 1s;
+	animation-name: example2;
+    animation-duration: 3s;
+	animation-iteration-count: infinite;
+	
+
+	
+}
+
+.img-gallery:hover{
+	box-shadow:none;
+	
+}
+
+
+.img-desc {
+	 width: 100%;
+	 white-space:nowrap;
+	 overflow:hidden;
+	 text-overflow:ellipsis;
+
+	
+}
+
+
+.img-responsive {
+	padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+	
+}
+
+@media only screen and (max-width: 700px) {
+  .img-responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img-responsive {
+    width: 98%;
+	margin:auto;
+  }
+}
+
+
+
+
+.contact {
+	width:98%;
+	height:auto;
+	border:2px solid gray;
+	border-radius: 10px;
+	border-radius: 10px;
+	margin:5px;
+	padding: 5px;
+	background-image: radial-gradient(red, yellow, green);
+	animation-name: example1;
+    animation-duration: 4s;
+	animation-iteration-count:infinite;
+	transition:5s;
+	
+}
+
+
+@keyframes example1 {
+	0% {background-image: radial-gradient(red, yellow, green);}
+	25% {background-image: radial-gradient(green, red, yellow);}
+	50% {background-image: radial-gradient(yellow, green, red);}
+    75% {background-image: radial-gradient(yellow, red, green);}
+	100% {background-image: radial-gradient(red, yellow, green); }
+
+	
+	
+	
+}
+
+input[type=text], select , input[type="date"], input[type="time"]{
+	  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #b4bfba;	
+  border-radius:20px;
+  background-image: url('images/logo.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  background-color:#c6afc7;
+  border:2px solid black;
+	
+}
+
+input[type=text]:focus, select:focus, input[type="date"]:focus, input[type="time"]:focus{
+	background-color:white;
+	outline:none;
+	  border-left: 2px solid white;	
+	
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+cursor: pointer;}
+
+
+.textmr {
+	border-radius:20px;
+	border:2px solid black;
+	width:99%; 
+	height:100px;
+	outline:none;
+	background-color:#c6afc7;
+ 
+	
+}
+
+.textmr:focus {
+	background-color:white;
+	outline:none;
+    border-left: 2px solid white;	
+
+	
+}
+
+.testimonials {
+	width:99%;
+	height: 200px;
+	background:url('images/logo.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:200px 100px;
+    background-color:red;
+	border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;
+	margin:2px;
+    border-radius:15px;	
+    margin-bottom:10px;
+	background-image:linear-gradient(to right, white, red, black);
+	
+}
+
+.contact{
+	font-family: Lacquer ;
+	
+}
+
+p {
+	font-family:Pacifico;
+}
+
+.mrrounderlogo{
+    text-align:left;
+	width:110px;
+	height:110px;
+	margin:auto;
+	padding:10px;
+	border-radius:50%;
+	border:2px solid blue;
+	background-color:#0aa0ab;
+	color:white;
+	font-weight:bold;
+	font-family:Trade Winds;
+	font-size:50px;
+	letter-spacing:-15px;
+	text-shadow:0 0 10px black;
+	transition: text-shadow 2s, transform 10s;
+	
+	
+}
+
+
+.mrrounderlogo:hover{
+	  transform: rotate(3600deg);
+}
+
+
+@keyframes example2 {
+		0% {box-shadow:0 0 10px yellow; width: 95%;	}
+		25% {box-shadow:0 0 10px yellow; width: 100%;	}
+		50% {box-shadow:0 0 10px yellow; width: 95%;	}
+		75% {box-shadow:0 0 10px yellow; width: 100%;	}
+		100% {box-shadow:0 0 10px yellow; width: 95%;	}
+}
+
+
+
+.h1-1st {
+	text-align:center;
+	color:yellow;
+	font-size:40px;
+	font-family:Righteous;
+	text-shadow:0 0 10px black;
+	animation-name: example3;
+    animation-duration: 3s;
+	animation-iteration-count: infinite;
+	
+	
+	
+}
+
+
+@keyframes example3 {
+  0%   {color:red; font-size:40px;}
+  25%  {color:yellow; font-size:50px;}
+  50%  {color:blue; font-size:40px; }
+  75%  {color:green; font-size:50px;}
+  100% {color:red; font-size:40px;}
+}
+	
+	
+}
+
+
+
+
+.mrtool {
+	text-align:center;
+	font-size:50px;
+	font-weight:bold;
+	font-family:Trade Winds;
+	
+	
+}
+
+
+
+.designer {
+	width:20%;
+	margin:auto;
+	
+	position:relative;
+	
+}
+
+
+.avarter {
+	width:100%;
+	border-radius:10px;
+	border:2px dotted #5c6a6e;
+	display:block;
+	
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  bottom:0;
+  height:100%;
+  width:0;
+  left:0;
+  right:100%;
+  transition:.5s;
+  overflow:hidden;
+  background-color:#91a170;
+  border-radius:10px;
+  border:2px dotted #5c6a6e;
+  
+  
+  
+  }
+
+
+.designer:hover .overlay{
+	 right:0;
+	 width:100%;
+}
+
+.div71{
+	text-align:center;
+	
+}
+
+.jsbutton{
+	padding:5px;
+	color:white;
+	background-color:green;
+	border-radius:10px;
+	border:2px dotted gray;
+	text-align:center;
+	font-weight:bold;
+	margin:auto;
+	left:50px;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
